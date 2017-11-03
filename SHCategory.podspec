@@ -1,10 +1,10 @@
 Pod::Spec.new do |s|
 
-  s.name         = "SHCategory"
+  s.name         = "SHGeneralCategory"
 
   s.version      = "0.0.1"
 
-  s.summary      = 'SHCategory' 
+  s.summary      = 'SHGeneralCategory...' 
 
   s.homepage     = 'https://github.com/motian30/SHCategory' 
 
