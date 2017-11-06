@@ -55,6 +55,7 @@
 		9F438B861FAC1ABF0080BD69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F438B991FAC1C100080BD69 /* Log.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Log.h; sourceTree = "<group>"; };
 		9F438B9A1FAC1C100080BD69 /* SHCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHCategory.h; sourceTree = "<group>"; };
+		9FAD1A851FB0345800EE1147 /* AppConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppConstant.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,8 +142,11 @@
 		9F438B971FAC1C100080BD69 /* SHCategory */ = {
 			isa = PBXGroup;
 			children = (
-				9F438B981FAC1C100080BD69 /* Constant */,
 				9F438B9A1FAC1C100080BD69 /* SHCategory.h */,
+				9F438B981FAC1C100080BD69 /* Constant */,
+				9FAD1A871FB0379300EE1147 /* Base */,
+				9FAD1A861FB0379300EE1147 /* GeneralCategory */,
+				9FAD1A881FB0379300EE1147 /* Extension */,
 			);
 			name = SHCategory;
 			path = ../../SHCategory;
@@ -151,9 +155,31 @@
 		9F438B981FAC1C100080BD69 /* Constant */ = {
 			isa = PBXGroup;
 			children = (
+				9FAD1A851FB0345800EE1147 /* AppConstant.h */,
 				9F438B991FAC1C100080BD69 /* Log.h */,
 			);
 			path = Constant;
+			sourceTree = "<group>";
+		};
+		9FAD1A861FB0379300EE1147 /* GeneralCategory */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GeneralCategory;
+			sourceTree = "<group>";
+		};
+		9FAD1A871FB0379300EE1147 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		9FAD1A881FB0379300EE1147 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,8 +190,8 @@
 			buildConfigurationList = 9F438B891FAC1ABF0080BD69 /* Build configuration list for PBXNativeTarget "SHCategoryExample" */;
 			buildPhases = (
 				9F438B561FAC1ABF0080BD69 /* Sources */,
-				9F438B571FAC1ABF0080BD69 /* Frameworks */,
 				9F438B581FAC1ABF0080BD69 /* Resources */,
+				9F438B571FAC1ABF0080BD69 /* Frameworks */,
 			);
 			buildRules = (
 			);

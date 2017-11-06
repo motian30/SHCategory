@@ -1,10 +1,3 @@
-//
-//  Log.h
-//  CategaryDemo
-//
-//  Created by Motian on 2017/11/3.
-//  Copyright © 2017年 Motian. All rights reserved.
-//
 
 #ifndef Log_h
 #define Log_h

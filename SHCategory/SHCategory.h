@@ -10,5 +10,6 @@
 #define SHCategory_h
 
 #import "Log.h"
+#import "AppConstant.h"
 
 #endif /* SHCategory_h */
