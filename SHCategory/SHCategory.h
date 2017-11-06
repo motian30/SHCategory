@@ -11,5 +11,7 @@
 
 #import "Log.h"
 #import "AppConstant.h"
+#import "DataConstant.h"
+#import "NetworkRequest.h"
 
 #endif /* SHCategory_h */
