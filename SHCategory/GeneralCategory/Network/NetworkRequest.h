@@ -7,7 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "AFNetworking.h"
+#import <UIKit/UIKit.h>
+#import <AFNetworking/AFNetworking.h>
+#import <SVProgressHUD/SVProgressHUD.h>
 
 @class NetworkRequest;
 
@@ -25,7 +27,12 @@ typedef void (^NetworkRequestProgressBlock)(NetworkRequest * NR,CGFloat progress
 /**
  Network Request
  */
-- (void)requestWithType:(ResType)type UrlAddress:(NSString *)url Parameters:(id)parameters Success:(NetworkRequestSuccessBlock)success failure:(NetworkRequestFailedBlock)failure progress:(NetworkRequestProgressBlock)progress;
+- (void)requestWithType:(ResType)type
+             URLAddress:(NSString *)url
+             Parameters:(id)parameters
+                Success:(NetworkRequestSuccessBlock)success
+                failure:(NetworkRequestFailedBlock)failure
+               progress:(NetworkRequestProgressBlock)progress;
 
 
 //Optional

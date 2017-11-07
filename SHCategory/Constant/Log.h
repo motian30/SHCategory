@@ -18,11 +18,11 @@ while (0);                                                          \
 }
 
 
-#define NSLog(fmt, ...) _NSLog((@"flie - %@ line :%d func - %s " fmt),                                                                                 \
-FILE,                                                               \
-__LINE__,                                                           \
-__FUNCTION__,                                                       \
-##__VA_ARGS__)                                                      \
+//#define NSLog(fmt, ...) _NSLog((@"flie - %@ line :%d func - %s " fmt),                                                                                 \
+//FILE,                                                               \
+//__LINE__,                                                           \
+//__FUNCTION__,                                                       \
+//##__VA_ARGS__)                                                      \
 
 
 #ifdef DEBUG
@@ -32,7 +32,7 @@ __LINE__,                                                           \
 __FUNCTION__,                                                       \
 ##__VA_ARGS__)
 #else
-#define DLog(...)
+#define SHLog(...)
 #endif
 
 #endif /* Log_h */

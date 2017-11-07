@@ -8,7 +8,6 @@
 
 #import "NetworkRequest.h"
 #import "Obj-Json.h"
-#import "SVProgressHUD.h"
 #import "DataConstant.h"
 
 static AFHTTPSessionManager *defaultManager;
@@ -30,7 +29,7 @@ static NSTimeInterval defaultTimeoutInterval = 10;
     return self;
 }
 
-- (void)requestWithType:(ResType)type UrlAddress:(NSString *)url Parameters:(id)parameters Success:(NetworkRequestSuccessBlock)success failure:(NetworkRequestFailedBlock)failure progress:(NetworkRequestProgressBlock)progress{
+- (void)requestWithType:(ResType)type URLAddress:(NSString *)url Parameters:(id)parameters Success:(NetworkRequestSuccessBlock)success failure:(NetworkRequestFailedBlock)failure progress:(NetworkRequestProgressBlock)progress{
     
     if (!self.self.hiddenEffect){
         [SVProgressHUD dismiss];
