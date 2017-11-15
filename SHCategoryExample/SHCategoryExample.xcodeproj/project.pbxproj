@@ -40,6 +40,8 @@
 
 /* Begin PBXFileReference section */
 		1079A6264159BDD45D112EF2 /* Pods-SHCategoryExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHCategoryExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-SHCategoryExample/Pods-SHCategoryExample.release.xcconfig"; sourceTree = "<group>"; };
+		9F0443861FBC0FFD00FEAEBD /* ToolManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToolManager.h; sourceTree = "<group>"; };
+		9F0443871FBC0FFE00FEAEBD /* ToolManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToolManager.m; sourceTree = "<group>"; };
 		9F3C8FCA1FB058A900C96F71 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		9F438B5A1FAC1ABF0080BD69 /* SHCategoryExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SHCategoryExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F438B5D1FAC1ABF0080BD69 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -103,6 +105,15 @@
 				1079A6264159BDD45D112EF2 /* Pods-SHCategoryExample.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		9F0443851FBC0FDA00FEAEBD /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				9F0443861FBC0FFD00FEAEBD /* ToolManager.h */,
+				9F0443871FBC0FFE00FEAEBD /* ToolManager.m */,
+			);
+			path = Tool;
 			sourceTree = "<group>";
 		};
 		9F3C8FC91FB051D600C96F71 /* Base */ = {
@@ -207,7 +218,8 @@
 			isa = PBXGroup;
 			children = (
 				9F59C0CC1FB14C8900CB2E28 /* Network */,
-				9FAD1AA41FB041D700EE1147 /* obj-json */,
+				9FAD1AA41FB041D700EE1147 /* Obj-json */,
+				9F0443851FBC0FDA00FEAEBD /* Tool */,
 			);
 			path = GeneralCategory;
 			sourceTree = "<group>";
@@ -219,13 +231,13 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
-		9FAD1AA41FB041D700EE1147 /* obj-json */ = {
+		9FAD1AA41FB041D700EE1147 /* Obj-json */ = {
 			isa = PBXGroup;
 			children = (
 				9FAD1AA51FB041D700EE1147 /* Obj-Json.h */,
 				9FAD1AA61FB041D700EE1147 /* Obj-Json.m */,
 			);
-			path = "obj-json";
+			path = "Obj-json";
 			sourceTree = "<group>";
 		};
 		9FAD1ACA1FB04C3200EE1147 /* Frameworks */ = {

@@ -8,6 +8,7 @@
 
 #import "Obj-Json.h"
 #import <objc/runtime.h>
+#import <objc/message.h>
 
 @implementation Obj_Json
 
@@ -120,5 +121,42 @@
     return [self getObjectData:obj];
     
 }
+
+
+
++ (instancetype )dictToObject:(__kindof NSDictionary *)dict{
+    id obj = [self new];
+   
+    for (NSString *property in [self propertList]) {
+       
+        if (dict[property]) {
+            
+            [obj setValue:dict[property] forKey:property];
+        }
+    }
+    return obj;
+}
+
+
++ (NSArray *)propertList{
+    unsigned int count = 0;
+    
+    objc_property_t *propertyList = class_copyPropertyList([self class], &count);
+    NSMutableArray *arr = [NSMutableArray array];
+    
+    for (int i = 0; i< count; i++) {
+        
+        objc_property_t property = propertyList[i];
+        
+        const char *cName = property_getName(property);
+        NSString *name = [[NSString alloc]initWithUTF8String:cName];
+        
+        [arr addObject:name];
+    }
+    
+    free(propertyList);
+    return arr.copy;
+}
+
 
 @end

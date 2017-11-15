@@ -30,9 +30,16 @@
 + (__kindof NSString *)ObjToJson:(id)obj;
 
 /**
- object - NSDictionary
+ NSObject - NSDictionary
  
  */
 + (__kindof NSDictionary*)getObjectData:(id)obj;
+
+
+/**
+ NSDictionary - NSObject
+ 
+ */
++ (instancetype )dictToObject:(__kindof NSDictionary *)dict;
 
 @end
