@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		64BA5A8D64A1C299EA7E8EA4 /* libPods-SHCategoryExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3EDB9C1212E5F9BD2FF08F5 /* libPods-SHCategoryExample.a */; };
+		9F42350C1FD7C66300EBA8F0 /* AlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F42350B1FD7C66300EBA8F0 /* AlertView.m */; };
+		9F42350F1FD7C7C300EBA8F0 /* UILabel+Space.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F42350E1FD7C7C300EBA8F0 /* UILabel+Space.m */; };
 		9F438B5F1FAC1ABF0080BD69 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F438B5E1FAC1ABF0080BD69 /* AppDelegate.m */; };
 		9F438B621FAC1ABF0080BD69 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F438B611FAC1ABF0080BD69 /* ViewController.m */; };
 		9F438B651FAC1ABF0080BD69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F438B631FAC1ABF0080BD69 /* Main.storyboard */; };
@@ -43,6 +45,10 @@
 		9F0443861FBC0FFD00FEAEBD /* ToolManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToolManager.h; sourceTree = "<group>"; };
 		9F0443871FBC0FFE00FEAEBD /* ToolManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToolManager.m; sourceTree = "<group>"; };
 		9F3C8FCA1FB058A900C96F71 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		9F42350A1FD7C66300EBA8F0 /* AlertView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlertView.h; sourceTree = "<group>"; };
+		9F42350B1FD7C66300EBA8F0 /* AlertView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlertView.m; sourceTree = "<group>"; };
+		9F42350D1FD7C7C300EBA8F0 /* UILabel+Space.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+Space.h"; sourceTree = "<group>"; };
+		9F42350E1FD7C7C300EBA8F0 /* UILabel+Space.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Space.m"; sourceTree = "<group>"; };
 		9F438B5A1FAC1ABF0080BD69 /* SHCategoryExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SHCategoryExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F438B5D1FAC1ABF0080BD69 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9F438B5E1FAC1ABF0080BD69 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -121,6 +127,17 @@
 			children = (
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		9F4235031FD7C61400EBA8F0 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				9F42350A1FD7C66300EBA8F0 /* AlertView.h */,
+				9F42350B1FD7C66300EBA8F0 /* AlertView.m */,
+				9F42350D1FD7C7C300EBA8F0 /* UILabel+Space.h */,
+				9F42350E1FD7C7C300EBA8F0 /* UILabel+Space.m */,
+			);
+			path = Alert;
 			sourceTree = "<group>";
 		};
 		9F438B511FAC1ABE0080BD69 = {
@@ -217,6 +234,7 @@
 		9FAD1A861FB0379300EE1147 /* GeneralCategory */ = {
 			isa = PBXGroup;
 			children = (
+				9F4235031FD7C61400EBA8F0 /* Alert */,
 				9F59C0CC1FB14C8900CB2E28 /* Network */,
 				9FAD1AA41FB041D700EE1147 /* Obj-json */,
 				9F0443851FBC0FDA00FEAEBD /* Tool */,
@@ -436,6 +454,8 @@
 				9FAD1AB01FB0490D00EE1147 /* Obj-Json.m in Sources */,
 				9F438B621FAC1ABF0080BD69 /* ViewController.m in Sources */,
 				9F438B681FAC1ABF0080BD69 /* SHCategoryExample.xcdatamodeld in Sources */,
+				9F42350F1FD7C7C300EBA8F0 /* UILabel+Space.m in Sources */,
+				9F42350C1FD7C66300EBA8F0 /* AlertView.m in Sources */,
 				9F438B701FAC1ABF0080BD69 /* main.m in Sources */,
 				9F438B5F1FAC1ABF0080BD69 /* AppDelegate.m in Sources */,
 			);
