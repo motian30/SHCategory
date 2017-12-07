@@ -47,12 +47,30 @@
 
 
 /**
+ 验证车架号
+ 
+ @param CheJiaNumber NSString
+ @return BOOL
+ */
++ (BOOL) checkCheJiaNumber:(NSString *) CheJiaNumber;
+
+
+/**
  验证用户名
 
  @param name NSString
  @return BOOL
  */
 + (BOOL)validateUserName:(NSString *)name;
+
+
+/**
+ 验证车架号
+ 
+ @param name NSString
+ @return BOOL
+ */
++ (BOOL) checkCheJiaNumber:(NSString *) CheJiaNumber;
 
 
 /**
@@ -80,5 +98,14 @@
  @return BOOL
  */
 + (BOOL) validateIdentityCard: (NSString *)identityCard;
+
+
+/**
+ 验证银行卡号
+
+ @param bankNumber NSString
+ @return BOOL
+ */
++ (BOOL) validateBankNumber:(NSString *) bankNumber;
 
 @end

@@ -54,11 +54,12 @@
     NSString * CU = @"^((133)|(153)|(177)|(18[0,1,9]))\\d{8}$";
     /**
      20         * 中国电信：China Telecom
-     21         * 133,1349,153,180,189
+     21         * 133,1349,153,180,189,173,177
      22         */
     // NSString * CT = @"^1((33|53|8[09])[0-9]|349)\\d{7}$";
-    NSString * CT = @"^1((33|53|8[019])[0-9]|349)\\d{7}$";
-    /**
+//    NSString * CT = @"^1((33|53|8[019])[0-9]|349)\\d{7}$";
+	NSString * CT = @"^1(33[0-9]|34[9]|53[0-9]|73[0-9]|77[0-9]|8[019][0-9])\\d{7}$";
+/**
      25         * 大陆地区固话及小灵通
      26         * 区号：010,020,021,022,023,024,025,027,028,029
      27         * 号码：七位或八位
@@ -96,6 +97,12 @@
     return [carTest evaluateWithObject:carNo];
 }
 
++ (BOOL) checkCheJiaNumber:(NSString *) CheJiaNumber{
+	NSString *bankNum=@"^(\\d{17})$";
+	NSPredicate *pred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",bankNum];
+	BOOL isMatch = [pred evaluateWithObject:CheJiaNumber];
+	return isMatch;
+}
 
 
 + (BOOL)validateUserName:(NSString *)name{
@@ -131,5 +138,12 @@
     return [identityCardPredicate evaluateWithObject:identityCard];
 }
 
+
++ (BOOL) validateBankNumber:(NSString *) bankNumber{
+	NSString *bankNum=@"^([0-9]{16}|[0-9]{19})$";
+	NSPredicate *pred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",bankNum];
+	BOOL isMatch = [pred evaluateWithObject:bankNumber];
+	return isMatch;
+}
 
 @end

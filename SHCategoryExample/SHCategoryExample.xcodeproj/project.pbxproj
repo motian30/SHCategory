@@ -21,6 +21,7 @@
 		9F438B851FAC1ABF0080BD69 /* SHCategoryExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F438B841FAC1ABF0080BD69 /* SHCategoryExampleUITests.m */; };
 		9F59C0CF1FB165D200CB2E28 /* NetworkRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F59C0CE1FB14C8900CB2E28 /* NetworkRequest.m */; };
 		9FAD1AB01FB0490D00EE1147 /* Obj-Json.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FAD1AA61FB041D700EE1147 /* Obj-Json.m */; };
+		F2C03C081FD934D200611BED /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C03C071FD934D200611BED /* UIView+Frame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,8 @@
 		9FAD1ACC1FB04F2800EE1147 /* DataConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataConstant.h; sourceTree = "<group>"; };
 		B3EDB9C1212E5F9BD2FF08F5 /* libPods-SHCategoryExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SHCategoryExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5E7DEE2C240F479F19BD928 /* Pods-SHCategoryExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHCategoryExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SHCategoryExample/Pods-SHCategoryExample.debug.xcconfig"; sourceTree = "<group>"; };
+		F2C03C061FD934D100611BED /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		F2C03C071FD934D200611BED /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -245,6 +248,8 @@
 		9FAD1A881FB0379300EE1147 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				F2C03C061FD934D100611BED /* UIView+Frame.h */,
+				F2C03C071FD934D200611BED /* UIView+Frame.m */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -453,6 +458,7 @@
 				9F59C0CF1FB165D200CB2E28 /* NetworkRequest.m in Sources */,
 				9FAD1AB01FB0490D00EE1147 /* Obj-Json.m in Sources */,
 				9F438B621FAC1ABF0080BD69 /* ViewController.m in Sources */,
+				F2C03C081FD934D200611BED /* UIView+Frame.m in Sources */,
 				9F438B681FAC1ABF0080BD69 /* SHCategoryExample.xcdatamodeld in Sources */,
 				9F42350F1FD7C7C300EBA8F0 /* UILabel+Space.m in Sources */,
 				9F42350C1FD7C66300EBA8F0 /* AlertView.m in Sources */,
