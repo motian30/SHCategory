@@ -31,6 +31,18 @@
 
 @implementation AlertView
 
+
+
+/**
+ 创建弹框
+
+ @param title   弹框标题
+ @param message 弹框内容
+ @param cancelTitle 取消按钮
+ @param otherBtnTitle 其他按钮
+ @param block 按钮点击block
+ @return 弹框
+ */
 - (instancetype)initWithTitle:(NSString *)title message:(NSString *)message cancelBtnTitle:(NSString *)cancelTitle otherBtnTitle:(NSString *)otherBtnTitle clickIndexBlock:(AlertClickIndexBlock)block{
     if(self=[super init]){
         self.frame=MainScreenRect;
@@ -160,7 +172,10 @@
         case TextAlignmentLeft:
             _messageLab.textAlignment=NSTextAlignmentLeft;
             break;
-            
+		    
+	case TextAlignmentRight:
+		_messageLab.textAlignment=NSTextAlignmentRight;
+		break;
         default:
             break;
     }
@@ -236,6 +251,7 @@
     self.messageLab.textColor = messageColor;
 }
 
+
 - (void)setCancelBtColor:(UIColor *)cancelBtColor{
     self.cancelBtn.backgroundColor = cancelBtColor;
 }
@@ -243,6 +259,21 @@
 - (void)setOtherBtColor:(UIColor *)otherBtColor{
     self.otherBtn.backgroundColor = otherBtColor;
 }
+
+
+- (void)setTitleFont:(CGFloat)titleFont {
+	self.titleLab.font = [UIFont systemFontOfSize:titleFont];
+}
+
+- (void)setMessageFont:(CGFloat)messageFont {
+	self.messageLab.font = [UIFont systemFontOfSize:messageFont];
+}
+
+- (void)setButtonFont:(CGFloat)buttonFont {
+	self.cancelBtn.titleLabel.font = [UIFont systemFontOfSize:buttonFont];
+	self.otherBtn.titleLabel.font = [UIFont systemFontOfSize:buttonFont];
+}
+
 
 - (void)setAnimationStyle:(ShowAnimationStyle )animationStyle{
     

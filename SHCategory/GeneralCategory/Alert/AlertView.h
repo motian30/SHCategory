@@ -18,7 +18,7 @@ typedef NS_ENUM(NSInteger , ShowAnimationStyle) {
 typedef NS_ENUM(NSInteger , TextAlignment) {
     TextAlignmentCenter = 0,
     TextAlignmentLeft      ,
-    
+    TextAlignmentRight
 };
 
 @interface AlertView : UIView
@@ -39,6 +39,10 @@ typedef void(^AlertClickIndexBlock)(NSInteger clickIndex);
  */
 - (instancetype)initWithTitle:(NSString *)title message:(NSString *)message cancelBtnTitle:(NSString *)cancelTitle otherBtnTitle:(NSString *)otherBtnTitle clickIndexBlock:(AlertClickIndexBlock)block;
 
+
+/**
+ 展示弹框
+ */
 - (void)showLXAlertView;
 
 
@@ -49,7 +53,7 @@ typedef void(^AlertClickIndexBlock)(NSInteger clickIndex);
 
 
 /**
- 内容文字TextAlignmen
+ 内容文字对齐方式
  */
 @property (nonatomic,assign)TextAlignment textAlignment;
 
@@ -61,6 +65,13 @@ typedef void(^AlertClickIndexBlock)(NSInteger clickIndex);
 @property (nonatomic,assign)UIColor *messageColor;
 @property (nonatomic,assign)UIColor *cancelBtColor;
 @property (nonatomic,assign)UIColor *otherBtColor;
+
+/**
+ 字体大小
+ */
+@property (nonatomic, assign) CGFloat titleFont;
+@property (nonatomic, assign) CGFloat messageFont;
+@property (nonatomic, assign) CGFloat buttonFont;
 
 
 /**
