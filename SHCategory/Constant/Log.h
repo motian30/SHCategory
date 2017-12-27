@@ -24,15 +24,21 @@ while (0);                                                          \
 //__FUNCTION__,                                                       \
 //##__VA_ARGS__)                                                      \
 
-
 #ifdef DEBUG
-#define SHLog(fmt, ...) _NSLog((@"flie - %@ line :%d func - %s " fmt),                   \
-FILE,                                                               \
-__LINE__,                                                           \
-__FUNCTION__,                                                       \
-##__VA_ARGS__)
+#define SHString [NSString stringWithFormat:@"%s", __FILE__].lastPathComponent
+#define SHLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
 #else
 #define SHLog(...)
 #endif
+
+//#ifdef DEBUG
+//#define SHLog(fmt, ...) _NSLog((@"flie - %@ line :%d func - %s " fmt),                   \
+//FILE,                                                               \
+//__LINE__,                                                           \
+//__FUNCTION__,                                                       \
+//##__VA_ARGS__)
+//#else
+//#define SHLog(...)
+//#endif
 
 #endif /* Log_h */
