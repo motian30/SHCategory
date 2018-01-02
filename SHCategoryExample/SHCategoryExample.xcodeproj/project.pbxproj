@@ -27,6 +27,7 @@
 		F2C03C111FD9429200611BED /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C03C0C1FD9429100611BED /* NSString+Base64.m */; };
 		F2C03C121FD9429200611BED /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C03C0E1FD9429100611BED /* NSString+Hash.m */; };
 		F2C03C161FD9443C00611BED /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C03C151FD9443C00611BED /* UIView+Frame.m */; };
+		F2C1AF2B1FFB8462007CA78D /* UIColor+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C1AF2A1FFB8460007CA78D /* UIColor+Addition.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +95,8 @@
 		F2C03C0F1FD9429200611BED /* NSString+Path.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Path.h"; sourceTree = "<group>"; };
 		F2C03C141FD9443C00611BED /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		F2C03C151FD9443C00611BED /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		F2C1AF291FFB8460007CA78D /* UIColor+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Addition.h"; sourceTree = "<group>"; };
+		F2C1AF2A1FFB8460007CA78D /* UIColor+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Addition.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -265,6 +268,7 @@
 		9FAD1A881FB0379300EE1147 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				F2C1AF281FFB8460007CA78D /* UIColor */,
 				F27FFD481FF39A15009E24FD /* NSDate */,
 				F2C03C131FD9443C00611BED /* UIView */,
 				F2C03C091FD9428300611BED /* NSString */,
@@ -318,6 +322,15 @@
 				F2C03C151FD9443C00611BED /* UIView+Frame.m */,
 			);
 			path = UIView;
+			sourceTree = "<group>";
+		};
+		F2C1AF281FFB8460007CA78D /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				F2C1AF291FFB8460007CA78D /* UIColor+Addition.h */,
+				F2C1AF2A1FFB8460007CA78D /* UIColor+Addition.m */,
+			);
+			path = UIColor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -508,6 +521,7 @@
 				F2C03C121FD9429200611BED /* NSString+Hash.m in Sources */,
 				9F59C0CF1FB165D200CB2E28 /* NetworkRequest.m in Sources */,
 				F2C03C111FD9429200611BED /* NSString+Base64.m in Sources */,
+				F2C1AF2B1FFB8462007CA78D /* UIColor+Addition.m in Sources */,
 				9FAD1AB01FB0490D00EE1147 /* Obj-Json.m in Sources */,
 				F27FFD4B1FF39A15009E24FD /* NSDate+Timer.m in Sources */,
 				9F438B621FAC1ABF0080BD69 /* ViewController.m in Sources */,

@@ -4,6 +4,7 @@
 
 @interface NSDate (Timer)
 
+
 /// 判断是否是今年
 - (BOOL)isThisYear;
 
@@ -49,5 +50,34 @@
  
  */
 - (NSString *)dateToDateStringWithFormat:(NSString *)formatString ;
+
+
+
+#pragma mark - 类方法
+/**
+ *  现在的日期
+ *
+ *  @return 现在的日期
+ */
++ (instancetype) dateNow;
+
+/**
+ *  明天的日期
+ *
+ *  @return 明天的日期
+ */
++ (instancetype) dateTomorrow;
+
+/**
+ *  昨天的日期
+ *
+ *  @return 昨天的日期
+ */
++ (instancetype) dateYesterday;
+
++ (instancetype) dateWithDaysBeforeNow: (NSInteger) days;
+
++ (instancetype) dateByAddingDays: (NSInteger) dDays;
++ (instancetype)convertDateToLocalTime: (NSDate *)forDate;
 
 @end
