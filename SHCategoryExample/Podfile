@@ -4,5 +4,6 @@ target 'SHCategoryExample' do
 
   pod 'AFNetworking'
   pod 'SVProgressHUD'
-
+  pod 'SDWebImage'
+  
 end	
