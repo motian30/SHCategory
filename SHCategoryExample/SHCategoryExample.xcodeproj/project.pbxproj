@@ -31,6 +31,10 @@
 		9F44A58F1FFC711F003CAD1A /* UIImage+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F44A58E1FFC711F003CAD1A /* UIImage+Add.m */; };
 		9F44A5951FFC7454003CAD1A /* ImageBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F44A5921FFC7454003CAD1A /* ImageBrowserViewController.m */; };
 		9F44A5961FFC7454003CAD1A /* PhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F44A5941FFC7454003CAD1A /* PhotoView.m */; };
+		9F44A59D1FFC7927003CAD1A /* TextViewWithPlaceholder.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F44A59C1FFC7927003CAD1A /* TextViewWithPlaceholder.m */; };
+		9F44A5A41FFC7A01003CAD1A /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F44A59E1FFC79FF003CAD1A /* BaseTableViewController.m */; };
+		9F44A5A51FFC7A01003CAD1A /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F44A5A01FFC7A00003CAD1A /* BaseViewController.m */; };
+		9F44A5A61FFC7A01003CAD1A /* MainNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F44A5A11FFC7A00003CAD1A /* MainNavigationController.m */; };
 		9F59C0CF1FB165D200CB2E28 /* NetworkRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F59C0CE1FB14C8900CB2E28 /* NetworkRequest.m */; };
 		9FAD1AB01FB0490D00EE1147 /* Obj-Json.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FAD1AA61FB041D700EE1147 /* Obj-Json.m */; };
 		F27FFD471FF3481C009E24FD /* FileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F27FFD461FF3481B009E24FD /* FileManager.m */; };
@@ -109,6 +113,14 @@
 		9F44A5921FFC7454003CAD1A /* ImageBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageBrowserViewController.m; sourceTree = "<group>"; };
 		9F44A5931FFC7454003CAD1A /* PhotoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoView.h; sourceTree = "<group>"; };
 		9F44A5941FFC7454003CAD1A /* PhotoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoView.m; sourceTree = "<group>"; };
+		9F44A59B1FFC7927003CAD1A /* TextViewWithPlaceholder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextViewWithPlaceholder.h; sourceTree = "<group>"; };
+		9F44A59C1FFC7927003CAD1A /* TextViewWithPlaceholder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextViewWithPlaceholder.m; sourceTree = "<group>"; };
+		9F44A59E1FFC79FF003CAD1A /* BaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewController.m; sourceTree = "<group>"; };
+		9F44A59F1FFC79FF003CAD1A /* MainNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainNavigationController.h; sourceTree = "<group>"; };
+		9F44A5A01FFC7A00003CAD1A /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		9F44A5A11FFC7A00003CAD1A /* MainNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainNavigationController.m; sourceTree = "<group>"; };
+		9F44A5A21FFC7A00003CAD1A /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		9F44A5A31FFC7A00003CAD1A /* BaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewController.h; sourceTree = "<group>"; };
 		9F59C0CD1FB14C8900CB2E28 /* NetworkRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkRequest.h; sourceTree = "<group>"; };
 		9F59C0CE1FB14C8900CB2E28 /* NetworkRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkRequest.m; sourceTree = "<group>"; };
 		9FAD1A851FB0345800EE1147 /* AppConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppConstant.h; sourceTree = "<group>"; };
@@ -178,6 +190,12 @@
 		9F3C8FC91FB051D600C96F71 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				9F44A5A31FFC7A00003CAD1A /* BaseTableViewController.h */,
+				9F44A59E1FFC79FF003CAD1A /* BaseTableViewController.m */,
+				9F44A5A21FFC7A00003CAD1A /* BaseViewController.h */,
+				9F44A5A01FFC7A00003CAD1A /* BaseViewController.m */,
+				9F44A59F1FFC79FF003CAD1A /* MainNavigationController.h */,
+				9F44A5A11FFC7A00003CAD1A /* MainNavigationController.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -341,6 +359,15 @@
 			path = ImageBrowser;
 			sourceTree = "<group>";
 		};
+		9F44A5971FFC78DF003CAD1A /* TextView */ = {
+			isa = PBXGroup;
+			children = (
+				9F44A59B1FFC7927003CAD1A /* TextViewWithPlaceholder.h */,
+				9F44A59C1FFC7927003CAD1A /* TextViewWithPlaceholder.m */,
+			);
+			path = TextView;
+			sourceTree = "<group>";
+		};
 		9F59C0CC1FB14C8900CB2E28 /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -353,6 +380,7 @@
 		9FAD1A861FB0379300EE1147 /* GeneralCategory */ = {
 			isa = PBXGroup;
 			children = (
+				9F44A5971FFC78DF003CAD1A /* TextView */,
 				9F44A5901FFC7454003CAD1A /* ImageBrowser */,
 				9F44A57B1FFC6E76003CAD1A /* Gif */,
 				9F44A5721FFC6E37003CAD1A /* KeyChain */,
@@ -608,9 +636,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2C03C121FD9429200611BED /* NSString+Hash.m in Sources */,
+				9F44A5A41FFC7A01003CAD1A /* BaseTableViewController.m in Sources */,
 				9F44A5961FFC7454003CAD1A /* PhotoView.m in Sources */,
 				9F44A57A1FFC6E37003CAD1A /* UUIDManager.m in Sources */,
 				9F59C0CF1FB165D200CB2E28 /* NetworkRequest.m in Sources */,
+				9F44A5A61FFC7A01003CAD1A /* MainNavigationController.m in Sources */,
+				9F44A5A51FFC7A01003CAD1A /* BaseViewController.m in Sources */,
 				9F44A56F1FFC6DCF003CAD1A /* UIButton+ClickEffect.m in Sources */,
 				9F44A56E1FFC6DCF003CAD1A /* ButtonWithPointInside.m in Sources */,
 				9F44A5781FFC6E37003CAD1A /* KeyChain.m in Sources */,
@@ -626,6 +657,7 @@
 				F27FFD471FF3481C009E24FD /* FileManager.m in Sources */,
 				9F42350F1FD7C7C300EBA8F0 /* UILabel+Space.m in Sources */,
 				9F42350C1FD7C66300EBA8F0 /* AlertView.m in Sources */,
+				9F44A59D1FFC7927003CAD1A /* TextViewWithPlaceholder.m in Sources */,
 				9F44A56D1FFC6DCF003CAD1A /* ButtonWithImgAndTitle.m in Sources */,
 				9F44A57E1FFC6E76003CAD1A /* GiFHUD.m in Sources */,
 				9F438B701FAC1ABF0080BD69 /* main.m in Sources */,
