@@ -44,7 +44,7 @@
     if (!_tableView){
         _style = self.isPlain ? Plain : Group;
         
-        _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width,self.view.size.height-64)style:_style];
+        _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width,self.view.frame.size.height-64)style:_style];
         
         _tableView.dataSource = self;
         _tableView.delegate = self;
@@ -61,7 +61,15 @@
     
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    self.automaticallyAdjustsScrollViewInsets=NO;
+    
+    if (@available(iOS 11.0, *)) {
+        
+        self.tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+        
+    } else {
+        self.automaticallyAdjustsScrollViewInsets = NO ;
+    }
+    
     [self setEdgesForExtendedLayout: UIRectEdgeNone];
     [self setupRefresh];
     _page = 1;
@@ -91,7 +99,6 @@
     return view;
 }
 
-#pragma refresh 
 - (void)setupRefresh{
     @weakify(self)
     if (_isheader) {

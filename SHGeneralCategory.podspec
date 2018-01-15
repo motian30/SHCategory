@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.frameworks = 'UIKit','Foundation'
   s.requires_arc = true
 
-  s.dependency 'AFNetworking'
+  s.dependency 'AFNetworking', "~> 3.0"
   s.dependency 'SVProgressHUD'
   s.dependency 'SDWebImage'
   s.dependency 'MJRefresh'
