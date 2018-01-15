@@ -8,7 +8,8 @@
 
 #import "WKWebViewWithProgess.h"
 #import "WebViewProgress.h"
-#import "SHCategory.h"
+#import "UIColor+Addition.h"
+#import "AppConstant.h"
 
 @interface WKWebViewWithProgess ()<WebViewProgressDelegate>
 
