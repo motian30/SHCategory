@@ -7,6 +7,7 @@
 //
 
 #import "WebViewProgress.h"
+#import <SVProgressHUD/SVProgressHUD.h>
 
 @interface WebViewProgress ()
 

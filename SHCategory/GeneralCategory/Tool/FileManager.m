@@ -1,5 +1,6 @@
 
 #import "FileManager.h"
+#import "Log.h"
 
 @implementation FileManager
 

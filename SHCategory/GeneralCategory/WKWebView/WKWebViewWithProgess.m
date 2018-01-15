@@ -8,7 +8,7 @@
 
 #import "WKWebViewWithProgess.h"
 #import "WebViewProgress.h"
-
+#import "SHCategory.h"
 
 @interface WKWebViewWithProgess ()<WebViewProgressDelegate>
 

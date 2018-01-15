@@ -1,6 +1,7 @@
 
 
 #import "NSDate+Timer.h"
+#import "Log.h"
 
 @implementation NSDate (Timer)
 
