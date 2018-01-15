@@ -193,15 +193,39 @@
 			path = Tool;
 			sourceTree = "<group>";
 		};
-		9F3C8FC91FB051D600C96F71 /* Base */ = {
+		9F191E3E200C7B1E006089BB /* NavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				9F44A59F1FFC79FF003CAD1A /* MainNavigationController.h */,
+				9F44A5A11FFC7A00003CAD1A /* MainNavigationController.m */,
+			);
+			path = NavigationController;
+			sourceTree = "<group>";
+		};
+		9F191E40200C7B24006089BB /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9F44A5A21FFC7A00003CAD1A /* BaseViewController.h */,
+				9F44A5A01FFC7A00003CAD1A /* BaseViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		9F191E41200C7B42006089BB /* TableViewcontroller */ = {
 			isa = PBXGroup;
 			children = (
 				9F44A5A31FFC7A00003CAD1A /* BaseTableViewController.h */,
 				9F44A59E1FFC79FF003CAD1A /* BaseTableViewController.m */,
-				9F44A5A21FFC7A00003CAD1A /* BaseViewController.h */,
-				9F44A5A01FFC7A00003CAD1A /* BaseViewController.m */,
-				9F44A59F1FFC79FF003CAD1A /* MainNavigationController.h */,
-				9F44A5A11FFC7A00003CAD1A /* MainNavigationController.m */,
+			);
+			path = TableViewcontroller;
+			sourceTree = "<group>";
+		};
+		9F3C8FC91FB051D600C96F71 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				9F191E41200C7B42006089BB /* TableViewcontroller */,
+				9F191E40200C7B24006089BB /* ViewController */,
+				9F191E3E200C7B1E006089BB /* NavigationController */,
 			);
 			path = Base;
 			sourceTree = "<group>";

@@ -10,7 +10,6 @@
     NSInteger _temPage;
     NSInteger _noMorePage;
 
-    CGRect curOperateCellRect; //当前cell的对(self.view）的坐标
 }
 @property(nonatomic, assign) BOOL isPlain;
 

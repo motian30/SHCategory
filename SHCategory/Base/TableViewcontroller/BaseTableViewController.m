@@ -100,13 +100,13 @@
 }
 
 - (void)setupRefresh{
-    @weakify(self)
+     __weak __typeof(self)weakSelf = self;
     if (_isheader) {
         MJRefreshNormalHeader *header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
             
             _temPage = _page;
             _page = 1;
-            [weak_self requstDataWithInfo:nil :^(BOOL success) {
+            [weakSelf requstDataWithInfo:nil :^(BOOL success) {
                 if (success) {
                     [self.dataArr removeAllObjects];
                 }
@@ -121,7 +121,7 @@
         MJRefreshBackNormalFooter *footer = [MJRefreshBackNormalFooter footerWithRefreshingBlock:^{
           
             _page ++;
-            [weak_self requstDataWithInfo:nil :nil];
+            [weakSelf requstDataWithInfo:nil :nil];
             
         }];
         self.tableView.mj_footer= footer;

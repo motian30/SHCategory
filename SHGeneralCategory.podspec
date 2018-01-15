@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios
   s.source   = { :git => 'https://github.com/motian30/SHCategory.git', :tag => s.version}
   s.source_files = 'SHCategory/**/*.{h,m}'
-  s.public_header_files = 'SHCategory/**/*.h'
+  s.public_header_files = 'SHCategory/**/**'
   s.frameworks = 'UIKit','Foundation'
   s.requires_arc = true
 
