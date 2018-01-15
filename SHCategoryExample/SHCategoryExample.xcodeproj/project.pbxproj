@@ -26,7 +26,6 @@
 		9F44A5711FFC6DCF003CAD1A /* UnderlineBt.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F44A56C1FFC6DCF003CAD1A /* UnderlineBt.m */; };
 		9F44A5781FFC6E37003CAD1A /* KeyChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F44A5741FFC6E37003CAD1A /* KeyChain.m */; };
 		9F44A57A1FFC6E37003CAD1A /* UUIDManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F44A5771FFC6E37003CAD1A /* UUIDManager.m */; };
-		9F44A57E1FFC6E76003CAD1A /* GiFHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F44A57D1FFC6E76003CAD1A /* GiFHUD.m */; };
 		9F44A5821FFC6EFA003CAD1A /* UIView+Foundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F44A5811FFC6EFA003CAD1A /* UIView+Foundation.m */; };
 		9F44A58F1FFC711F003CAD1A /* UIImage+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F44A58E1FFC711F003CAD1A /* UIImage+Add.m */; };
 		9F44A5951FFC7454003CAD1A /* ImageBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F44A5921FFC7454003CAD1A /* ImageBrowserViewController.m */; };
@@ -38,6 +37,7 @@
 		9F44A5AF1FFC7B75003CAD1A /* WebViewProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F44A5AB1FFC7B74003CAD1A /* WebViewProgress.m */; };
 		9F44A5B01FFC7B75003CAD1A /* WKWebViewWithProgess.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F44A5AD1FFC7B74003CAD1A /* WKWebViewWithProgess.m */; };
 		9F59C0CF1FB165D200CB2E28 /* NetworkRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F59C0CE1FB14C8900CB2E28 /* NetworkRequest.m */; };
+		9F5CE26A200C834D006DA4BB /* GiFHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5CE268200C834C006DA4BB /* GiFHUD.m */; };
 		9FAD1AB01FB0490D00EE1147 /* Obj-Json.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FAD1AA61FB041D700EE1147 /* Obj-Json.m */; };
 		F27FFD471FF3481C009E24FD /* FileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F27FFD461FF3481B009E24FD /* FileManager.m */; };
 		F27FFD4B1FF39A15009E24FD /* NSDate+Timer.m in Sources */ = {isa = PBXBuildFile; fileRef = F27FFD4A1FF39A15009E24FD /* NSDate+Timer.m */; };
@@ -105,8 +105,6 @@
 		9F44A5741FFC6E37003CAD1A /* KeyChain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyChain.m; sourceTree = "<group>"; };
 		9F44A5761FFC6E37003CAD1A /* UUIDManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UUIDManager.h; sourceTree = "<group>"; };
 		9F44A5771FFC6E37003CAD1A /* UUIDManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UUIDManager.m; sourceTree = "<group>"; };
-		9F44A57C1FFC6E76003CAD1A /* GiFHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GiFHUD.h; sourceTree = "<group>"; };
-		9F44A57D1FFC6E76003CAD1A /* GiFHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GiFHUD.m; sourceTree = "<group>"; };
 		9F44A5801FFC6EFA003CAD1A /* UIView+Foundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Foundation.h"; sourceTree = "<group>"; };
 		9F44A5811FFC6EFA003CAD1A /* UIView+Foundation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Foundation.m"; sourceTree = "<group>"; };
 		9F44A58D1FFC711F003CAD1A /* UIImage+Add.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Add.h"; sourceTree = "<group>"; };
@@ -129,6 +127,8 @@
 		9F44A5AD1FFC7B74003CAD1A /* WKWebViewWithProgess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWebViewWithProgess.m; sourceTree = "<group>"; };
 		9F59C0CD1FB14C8900CB2E28 /* NetworkRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkRequest.h; sourceTree = "<group>"; };
 		9F59C0CE1FB14C8900CB2E28 /* NetworkRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkRequest.m; sourceTree = "<group>"; };
+		9F5CE268200C834C006DA4BB /* GiFHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GiFHUD.m; sourceTree = "<group>"; };
+		9F5CE269200C834C006DA4BB /* GiFHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GiFHUD.h; sourceTree = "<group>"; };
 		9FAD1A851FB0345800EE1147 /* AppConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppConstant.h; sourceTree = "<group>"; };
 		9FAD1AA51FB041D700EE1147 /* Obj-Json.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Obj-Json.h"; sourceTree = "<group>"; };
 		9FAD1AA61FB041D700EE1147 /* Obj-Json.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Obj-Json.m"; sourceTree = "<group>"; };
@@ -351,15 +351,6 @@
 			path = KeyChain;
 			sourceTree = "<group>";
 		};
-		9F44A57B1FFC6E76003CAD1A /* Gif */ = {
-			isa = PBXGroup;
-			children = (
-				9F44A57C1FFC6E76003CAD1A /* GiFHUD.h */,
-				9F44A57D1FFC6E76003CAD1A /* GiFHUD.m */,
-			);
-			path = Gif;
-			sourceTree = "<group>";
-		};
 		9F44A57F1FFC6EB8003CAD1A /* UIView */ = {
 			isa = PBXGroup;
 			children = (
@@ -418,13 +409,22 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
+		9F5CE267200C833E006DA4BB /* GifHud */ = {
+			isa = PBXGroup;
+			children = (
+				9F5CE269200C834C006DA4BB /* GiFHUD.h */,
+				9F5CE268200C834C006DA4BB /* GiFHUD.m */,
+			);
+			path = GifHud;
+			sourceTree = "<group>";
+		};
 		9FAD1A861FB0379300EE1147 /* GeneralCategory */ = {
 			isa = PBXGroup;
 			children = (
+				9F5CE267200C833E006DA4BB /* GifHud */,
 				9F44A5A71FFC7B74003CAD1A /* WKWebView */,
 				9F44A5971FFC78DF003CAD1A /* TextView */,
 				9F44A5901FFC7454003CAD1A /* ImageBrowser */,
-				9F44A57B1FFC6E76003CAD1A /* Gif */,
 				9F44A5721FFC6E37003CAD1A /* KeyChain */,
 				9F4235031FD7C61400EBA8F0 /* Alert */,
 				9F59C0CC1FB14C8900CB2E28 /* Network */,
@@ -700,10 +700,10 @@
 				9F44A5711FFC6DCF003CAD1A /* UnderlineBt.m in Sources */,
 				F27FFD471FF3481C009E24FD /* FileManager.m in Sources */,
 				9F42350F1FD7C7C300EBA8F0 /* UILabel+Space.m in Sources */,
+				9F5CE26A200C834D006DA4BB /* GiFHUD.m in Sources */,
 				9F42350C1FD7C66300EBA8F0 /* AlertView.m in Sources */,
 				9F44A59D1FFC7927003CAD1A /* TextViewWithPlaceholder.m in Sources */,
 				9F44A56D1FFC6DCF003CAD1A /* ButtonWithImgAndTitle.m in Sources */,
-				9F44A57E1FFC6E76003CAD1A /* GiFHUD.m in Sources */,
 				9F438B701FAC1ABF0080BD69 /* main.m in Sources */,
 				9F438B5F1FAC1ABF0080BD69 /* AppDelegate.m in Sources */,
 				9F44A5821FFC6EFA003CAD1A /* UIView+Foundation.m in Sources */,
