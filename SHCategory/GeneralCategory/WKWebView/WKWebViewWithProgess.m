@@ -8,7 +8,7 @@
 
 #import "WKWebViewWithProgess.h"
 #import "WebViewProgress.h"
-#import "HideInputAccessory.h"
+
 
 @interface WKWebViewWithProgess ()<WebViewProgressDelegate>
 
@@ -54,11 +54,7 @@
     
 }
 
-- (void)setHideInputAccessory:(BOOL)hideInputAccessory{
-    if (hideInputAccessory) {
-        [HideInputAccessory removeInputAccessoryViewFromWKWebView:self];
-    }
-}
+
 
 - (void)setupProgressLayer{
     CGFloat height = self.progressHeight > 0 ? self.progressHeight : 2.5;

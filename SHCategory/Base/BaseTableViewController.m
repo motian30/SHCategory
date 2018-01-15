@@ -35,7 +35,7 @@
         _foot_la = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, self.tableView.frame.size.width, 0.0f)];
         _foot_la.text = @"暂无数据";
         _foot_la.textAlignment = NSTextAlignmentCenter;
-        _foot_la.textColor = TITLE_BLACK_COLROR;
+        _foot_la.textColor = [UIColor blackColor];
     }
     return _foot_la;
 }

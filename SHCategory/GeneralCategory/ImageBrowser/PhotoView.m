@@ -18,14 +18,16 @@
     if (self) {
         //添加图片
         SDWebImageManager *manager = [SDWebImageManager sharedManager];
-        BOOL isCached = [manager cachedImageExistsForURL:[NSURL URLWithString:photoUrl]];
-        if (!isCached) {//没有缓存
-            [self.imageView sd_setImageWithURL:[NSURL URLWithString:photoUrl] placeholderImage:[UIImage imageNamed:@"invalid3"]];
-        }else{//直接取出缓存的图片，减少流量消耗
-            UIImage *cachedImage = [[SDImageCache sharedImageCache] imageFromDiskCacheForKey:photoUrl];
-            self.imageView.frame=[self caculateOriginImageSizeWith:cachedImage];
-            self.imageView.image=cachedImage;
-        }
+        [manager cachedImageExistsForURL:[NSURL URLWithString:photoUrl] completion:^(BOOL isInCache) {
+            if (isInCache) {
+                UIImage *cachedImage = [[SDImageCache sharedImageCache] imageFromDiskCacheForKey:photoUrl];
+                self.imageView.frame=[self caculateOriginImageSizeWith:cachedImage];
+                self.imageView.image=cachedImage;
+            }else{
+                 [self.imageView sd_setImageWithURL:[NSURL URLWithString:photoUrl] placeholderImage:[UIImage imageNamed:@"invalid3"]];
+            }
+        }];
+
     }
     return self;
 }
@@ -129,7 +131,7 @@
 -(UIImageView *)imageView{
     
     if (_imageView==nil) {
-        _imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_WIDTH)];
+        _imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenWidth)];
         _imageView.center = self.center;
         _imageView.contentMode = UIViewContentModeScaleAspectFit;
         _imageView.userInteractionEnabled=YES;

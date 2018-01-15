@@ -151,8 +151,6 @@
     
 }
 
-
-
 - (void)showLXAlertView{
     
     _alertWindow=[[UIWindow alloc] initWithFrame:MainScreenRect];
