@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "SHGeneralCategory"
-  s.version      = "1.0.5"
+  s.version      = "1.0.6"
   s.summary      = 'SHGeneralCategory...' 
   s.homepage     = 'https://github.com/motian30/SHCategory' 
   s.license  = 'MIT'
@@ -27,8 +27,6 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'GeneralCategory' do |ss|
-    ss.source_files = 'SHCategory/GeneralCategory/**/*.{h,m}'
-    ss.public_header_files = 'SHCategory/GeneralCategory/**/*.h'
     ss.dependency 'SHGeneralCategory/Constant'
     ss.dependency 'SVProgressHUD'
     ss.dependency 'AFNetworking'
@@ -88,9 +86,6 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'Extension' do |ss|
-    ss.source_files = 'SHCategory/Extension/**/*.{h,m}'
-    ss.public_header_files = 'SHCategory/Extension/**/*.h'
-    ss.dependency 'SHGeneralCategory/Constant'
 
       ss.subspec 'UIImage' do |sss|
       sss.source_files = 'SHCategory/Extension/UIImage/*.{h,m}'
@@ -119,6 +114,7 @@ Pod::Spec.new do |s|
       ss.subspec 'NSDate' do |sss|
       sss.source_files = 'SHCategory/Extension/NSDate/*.{h,m}'
       sss.public_header_files = 'SHCategory/Extension/NSDate/*.h'
+      sss.dependency 'SHGeneralCategory/Constant'
  
       end
 
