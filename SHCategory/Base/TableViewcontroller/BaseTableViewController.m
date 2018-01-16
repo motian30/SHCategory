@@ -100,7 +100,7 @@
 }
 
 - (void)setupRefresh{
-     __weak __typeof(self)weakSelf = self;
+     __unsafe_unretained __typeof__(self) weakSelf = self;
     if (_isheader) {
         MJRefreshNormalHeader *header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
             

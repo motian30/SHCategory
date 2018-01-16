@@ -20,5 +20,5 @@ typedef NS_ENUM(NSUInteger,PhotoBroswerVCType) {
 /**
  *  显示图片
  */
-+(void)show:(UIViewController *)handleVC type:(PhotoBroswerVCType)type index:(NSUInteger)index imagesBlock:(NSArray *(^)())imagesBlock;
++(void)show:(UIViewController *)handleVC type:(PhotoBroswerVCType)type index:(NSUInteger)index imagesBlock:(NSArray *(^)(void))imagesBlock;
 @end

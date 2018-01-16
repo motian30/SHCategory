@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.homepage     = 'https://github.com/motian30/SHCategory' 
   s.license  = 'MIT'
   s.authors  = { 'Motian' => 'llstc30@163.com' }
-  s.platform     = :ios
+  s.platform     = :ios,'7.0'
   s.source   = { :git => 'https://github.com/motian30/SHCategory.git', :tag => s.version}
   s.source_files = 'SHCategory/SHCategory.h'
   s.public_header_files = 'SHCategory/SHCategory.h'
@@ -126,11 +126,5 @@ Pod::Spec.new do |s|
  
   end
 
-
-
-  
-  
-
- 
 end
 

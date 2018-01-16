@@ -13,7 +13,7 @@
 @property(nonatomic,strong) UIScrollView *scrollView;
 
 /** 外部操作控制器 */
-@property (nonatomic,weak) UIViewController *handleVC;
+@property (nonatomic,assign) UIViewController *handleVC;
 
 /** 图片浏览方式 */
 @property (nonatomic,assign) PhotoBroswerVCType type;
@@ -105,7 +105,7 @@
 }
 
 #pragma mark - 生成显示窗口
-+(void)show:(UIViewController *)handleVC type:(PhotoBroswerVCType)type index:(NSUInteger)index imagesBlock:(NSArray *(^)())imagesBlock{
++(void)show:(UIViewController *)handleVC type:(PhotoBroswerVCType)type index:(NSUInteger)index imagesBlock:(NSArray *(^)(void))imagesBlock{
     
     NSArray *photoModels = imagesBlock();//取出相册数组
     
