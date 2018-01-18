@@ -12,12 +12,11 @@
 @interface WebViewProgress ()
 
 @property (nonatomic, assign) CGFloat initialProgressValue;
-@property (nonatomic, assign) CGFloat interactiveProgressValue;
 @property (nonatomic, assign) CGFloat finalProgressValue;
 
-@property (nonatomic, assign) NSInteger loadingCount;
-@property (nonatomic, assign) NSInteger maxLoadCount;
-@property (nonatomic, strong) NSURL *currentURL;
+@property (nonatomic, assign) CGFloat loadingCount;
+@property (nonatomic, assign) CGFloat maxLoadCount;
+
 
 @end
 
@@ -28,7 +27,6 @@
     if (self = [super init]) {
         self.maxLoadCount = self.loadingCount = 1.0;
         self.initialProgressValue = .1;
-        self.interactiveProgressValue = 0.5;
         self.finalProgressValue = .9;
     }
     return self;
@@ -41,7 +39,6 @@
     }
 }
 
-
 - (void)incrementProgress {
     CGFloat progress = self.progress;
     CGFloat maxProgress =  self.finalProgressValue;
@@ -52,16 +49,14 @@
     [self setProgress:progress];
 }
 
-
 - (void)completeProgress {
     [self setProgress:1.0];
 }
 
-
 - (void)reset {
     self.maxLoadCount = 1.0;
     self.loadingCount = 0;
-    self.progress = 0;
+    self.progress = 0.1;
 }
 
 #pragma mark - WKNavigationDelegate

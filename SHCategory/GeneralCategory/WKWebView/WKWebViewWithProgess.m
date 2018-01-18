@@ -72,7 +72,7 @@
     self.progressLayer.lineCap = kCALineCapRound;
     self.progressLayer.strokeStart = 0.0;
     self.progressLayer.strokeEnd = 0.0;
-    self.progressLayer.strokeColor = [UIColor yellowColor].CGColor;
+    self.progressLayer.strokeColor = [UIColor whiteColor].CGColor;
     
     [self.scrollView.layer addSublayer:self.progressLayer];
     

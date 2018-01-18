@@ -16,7 +16,6 @@
 
 @property (nonatomic, copy) NSString *urlStr;
 
-@property (nonatomic, assign) BOOL hideInputAccessory;
 
 - (void)startLoad;
 

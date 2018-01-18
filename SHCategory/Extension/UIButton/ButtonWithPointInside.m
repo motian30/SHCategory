@@ -6,8 +6,8 @@
 
 
 
-- (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent*)event
-{
+- (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent*)event{
+    
     CGRect bounds = self.bounds;
     CGFloat widthDelta = MAX(60.0 - bounds.size.width, 0);
     CGFloat heightDelta = MAX(60.0 - bounds.size.height, 0);
