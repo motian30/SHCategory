@@ -57,7 +57,7 @@
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
    
     UIGraphicsEndImageContext();
-    CGContextRelease(ctx);
+
     return image;
 }
 
