@@ -1,6 +1,6 @@
 
-#ifndef AppConstant_h
-#define AppConstant_h
+#ifndef CommonConstant_h
+#define CommonConstant_h
 
 /**
  weak
@@ -88,4 +88,4 @@
 #else
 #endif
 
-#endif /* AppConstant_h */
+#endif 

@@ -9,11 +9,6 @@
 #import "NetworkRequest.h"
 #import "Obj-Json.h"
 
-
-static AFHTTPSessionManager *defaultManager;
-
-static NSTimeInterval defaultTimeoutInterval = 10;
-
 @implementation NetworkRequest
 
 - (instancetype)init{

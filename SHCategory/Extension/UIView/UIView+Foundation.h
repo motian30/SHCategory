@@ -33,5 +33,5 @@
 - (void)removeAllSubviews;
 - (UIViewController *)viewController;
 - (void)setRoundedCorners:(UIRectCorner)corners radius:(CGFloat)radius;
-
+- (void)setAnchorPointTo:(CGPoint)point;
 @end

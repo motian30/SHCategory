@@ -13,6 +13,10 @@
 
 @class NetworkRequest;
 
+static AFHTTPSessionManager *defaultManager;
+
+static NSTimeInterval defaultTimeoutInterval = 10;
+
 typedef NS_ENUM(NSUInteger, RequestType) {
     GET_Request,
     POST_Request,
