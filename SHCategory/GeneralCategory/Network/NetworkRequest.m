@@ -133,7 +133,7 @@ static NSTimeInterval defaultTimeoutInterval = 10;
     if (self.aloneUrlAddress) {
         return urlstr;
     }else{
-        return [NSString stringWithFormat:@"%@%@",Basic_URL,urlstr];
+        return [NSString stringWithFormat:@"%@%@",@"",urlstr];
     }
 }
 

@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "SHGeneralCategory"
-  s.version      = "1.0.8"
+  s.version      = "1.0.9"
   s.summary      = 'SHGeneralCategory...' 
   s.homepage     = 'https://github.com/motian30/SHCategory' 
   s.license  = 'MIT'

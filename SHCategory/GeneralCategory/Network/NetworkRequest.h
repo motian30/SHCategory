@@ -11,9 +11,6 @@
 #import <AFNetworking/AFNetworking.h>
 #import <SVProgressHUD/SVProgressHUD.h>
 
-static const NSString *Basic_URL= @"";
-
-
 @class NetworkRequest;
 
 typedef NS_ENUM(NSUInteger, RequestType) {
@@ -55,6 +52,15 @@ typedef void (^NetworkRequestProgressBlock)(NetworkRequest * NR,CGFloat progress
 
 //Optional - Response is json
 @property (nonatomic, assign) BOOL jsonResponse;
+
+
+/**
+ subClass 重写
+
+ @param urlstr 基本URL
+ @return 请求地址
+ */
+- (NSString *)fullURLAddressWith:(NSString *)urlstr;
 
 
 @end
