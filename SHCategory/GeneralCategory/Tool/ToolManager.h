@@ -65,15 +65,6 @@
 
 
 /**
- 验证车架号
- 
- @param name NSString
- @return BOOL
- */
-+ (BOOL) checkCheJiaNumber:(NSString *) CheJiaNumber;
-
-
-/**
  验证密码
 
  @param passWord NSString

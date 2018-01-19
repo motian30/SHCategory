@@ -151,7 +151,7 @@
     
 }
 
-- (void)showLXAlertView{
+- (void)showAlertView{
     
     _alertWindow=[[UIWindow alloc] initWithFrame:MainScreenRect];
     _alertWindow.windowLevel=UIWindowLevelAlert;

@@ -8,7 +8,7 @@
 
 #import "NetworkRequest.h"
 #import "Obj-Json.h"
-#import "DataConstant.h"
+
 
 static AFHTTPSessionManager *defaultManager;
 

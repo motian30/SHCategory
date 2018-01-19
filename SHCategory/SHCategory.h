@@ -10,9 +10,7 @@
 #define SHCategory_h
 
 #import "Log.h"
-#import "AppConstant.h"
-#import "DataConstant.h"
-#import "NetworkRequest.h"
+#import "CommonConstant.h"
 #import "UIColor+Addition.h"
 #import "AlertView.h"
 #import "UIView+Foundation.h"

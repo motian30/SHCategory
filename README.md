@@ -8,11 +8,6 @@ Constant：定义类
     AppConstant：常用宏
     Log：NSLog宏
     DataConstant：数据定义
-
-Base：基类
-    BaseViewController：ViewController
-    BaseTableViewController：Viewcontroller + TableView
-    MainNavigationController：NavigationController
     
 GeneralCategory：常用封装
     WKWebView：WKWebView + progress

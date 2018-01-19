@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "SHGeneralCategory"
-  s.version      = "1.0.7"
+  s.version      = "1.0.8"
   s.summary      = 'SHGeneralCategory...' 
   s.homepage     = 'https://github.com/motian30/SHCategory' 
   s.license  = 'MIT'
@@ -16,13 +16,6 @@ Pod::Spec.new do |s|
   s.subspec 'Constant' do |ss|
     ss.source_files = 'SHCategory/Constant/*.h'
     ss.public_header_files = 'SHCategory/Constant/*.h'
- 
-  end
-
-  s.subspec 'Base' do |ss|
-    ss.source_files = 'SHCategory/Base/**/*.{h,m}'
-    ss.public_header_files = 'SHCategory/Base/**/*.h'
-    ss.dependency 'MJRefresh'
  
   end
 

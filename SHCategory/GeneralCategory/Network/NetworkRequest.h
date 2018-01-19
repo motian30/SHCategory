@@ -11,6 +11,8 @@
 #import <AFNetworking/AFNetworking.h>
 #import <SVProgressHUD/SVProgressHUD.h>
 
+static const NSString *Basic_URL= @"";
+
 
 @class NetworkRequest;
 

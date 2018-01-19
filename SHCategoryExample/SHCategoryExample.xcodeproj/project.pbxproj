@@ -31,9 +31,6 @@
 		9F44A5951FFC7454003CAD1A /* ImageBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F44A5921FFC7454003CAD1A /* ImageBrowserViewController.m */; };
 		9F44A5961FFC7454003CAD1A /* PhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F44A5941FFC7454003CAD1A /* PhotoView.m */; };
 		9F44A59D1FFC7927003CAD1A /* TextViewWithPlaceholder.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F44A59C1FFC7927003CAD1A /* TextViewWithPlaceholder.m */; };
-		9F44A5A41FFC7A01003CAD1A /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F44A59E1FFC79FF003CAD1A /* BaseTableViewController.m */; };
-		9F44A5A51FFC7A01003CAD1A /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F44A5A01FFC7A00003CAD1A /* BaseViewController.m */; };
-		9F44A5A61FFC7A01003CAD1A /* MainNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F44A5A11FFC7A00003CAD1A /* MainNavigationController.m */; };
 		9F44A5AF1FFC7B75003CAD1A /* WebViewProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F44A5AB1FFC7B74003CAD1A /* WebViewProgress.m */; };
 		9F44A5B01FFC7B75003CAD1A /* WKWebViewWithProgess.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F44A5AD1FFC7B74003CAD1A /* WKWebViewWithProgess.m */; };
 		9F59C0CF1FB165D200CB2E28 /* NetworkRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F59C0CE1FB14C8900CB2E28 /* NetworkRequest.m */; };
@@ -114,22 +111,15 @@
 		9F44A5941FFC7454003CAD1A /* PhotoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoView.m; sourceTree = "<group>"; };
 		9F44A59B1FFC7927003CAD1A /* TextViewWithPlaceholder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextViewWithPlaceholder.h; sourceTree = "<group>"; };
 		9F44A59C1FFC7927003CAD1A /* TextViewWithPlaceholder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextViewWithPlaceholder.m; sourceTree = "<group>"; };
-		9F44A59E1FFC79FF003CAD1A /* BaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewController.m; sourceTree = "<group>"; };
-		9F44A59F1FFC79FF003CAD1A /* MainNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainNavigationController.h; sourceTree = "<group>"; };
-		9F44A5A01FFC7A00003CAD1A /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
-		9F44A5A11FFC7A00003CAD1A /* MainNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainNavigationController.m; sourceTree = "<group>"; };
-		9F44A5A21FFC7A00003CAD1A /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
-		9F44A5A31FFC7A00003CAD1A /* BaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewController.h; sourceTree = "<group>"; };
 		9F44A5AA1FFC7B74003CAD1A /* WebViewProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewProgress.h; sourceTree = "<group>"; };
 		9F44A5AB1FFC7B74003CAD1A /* WebViewProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewProgress.m; sourceTree = "<group>"; };
 		9F44A5AC1FFC7B74003CAD1A /* WKWebViewWithProgess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKWebViewWithProgess.h; sourceTree = "<group>"; };
 		9F44A5AD1FFC7B74003CAD1A /* WKWebViewWithProgess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWebViewWithProgess.m; sourceTree = "<group>"; };
 		9F59C0CD1FB14C8900CB2E28 /* NetworkRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkRequest.h; sourceTree = "<group>"; };
 		9F59C0CE1FB14C8900CB2E28 /* NetworkRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkRequest.m; sourceTree = "<group>"; };
-		9FAD1A851FB0345800EE1147 /* AppConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppConstant.h; sourceTree = "<group>"; };
+		9FAD1A851FB0345800EE1147 /* CommonConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonConstant.h; sourceTree = "<group>"; };
 		9FAD1AA51FB041D700EE1147 /* Obj-Json.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Obj-Json.h"; sourceTree = "<group>"; };
 		9FAD1AA61FB041D700EE1147 /* Obj-Json.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Obj-Json.m"; sourceTree = "<group>"; };
-		9FAD1ACC1FB04F2800EE1147 /* DataConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataConstant.h; sourceTree = "<group>"; };
 		B3EDB9C1212E5F9BD2FF08F5 /* libPods-SHCategoryExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SHCategoryExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5E7DEE2C240F479F19BD928 /* Pods-SHCategoryExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHCategoryExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SHCategoryExample/Pods-SHCategoryExample.debug.xcconfig"; sourceTree = "<group>"; };
 		F27FFD451FF3481B009E24FD /* FileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileManager.h; sourceTree = "<group>"; };
@@ -188,43 +178,6 @@
 				9F0443871FBC0FFE00FEAEBD /* ToolManager.m */,
 			);
 			path = Tool;
-			sourceTree = "<group>";
-		};
-		9F191E3E200C7B1E006089BB /* NavigationController */ = {
-			isa = PBXGroup;
-			children = (
-				9F44A59F1FFC79FF003CAD1A /* MainNavigationController.h */,
-				9F44A5A11FFC7A00003CAD1A /* MainNavigationController.m */,
-			);
-			path = NavigationController;
-			sourceTree = "<group>";
-		};
-		9F191E40200C7B24006089BB /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				9F44A5A21FFC7A00003CAD1A /* BaseViewController.h */,
-				9F44A5A01FFC7A00003CAD1A /* BaseViewController.m */,
-			);
-			path = ViewController;
-			sourceTree = "<group>";
-		};
-		9F191E41200C7B42006089BB /* TableViewcontroller */ = {
-			isa = PBXGroup;
-			children = (
-				9F44A5A31FFC7A00003CAD1A /* BaseTableViewController.h */,
-				9F44A59E1FFC79FF003CAD1A /* BaseTableViewController.m */,
-			);
-			path = TableViewcontroller;
-			sourceTree = "<group>";
-		};
-		9F3C8FC91FB051D600C96F71 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				9F191E41200C7B42006089BB /* TableViewcontroller */,
-				9F191E40200C7B24006089BB /* ViewController */,
-				9F191E3E200C7B1E006089BB /* NavigationController */,
-			);
-			path = Base;
 			sourceTree = "<group>";
 		};
 		9F4235031FD7C61400EBA8F0 /* Alert */ = {
@@ -302,7 +255,6 @@
 			children = (
 				9F438B9A1FAC1C100080BD69 /* SHCategory.h */,
 				9F438B981FAC1C100080BD69 /* Constant */,
-				9F3C8FC91FB051D600C96F71 /* Base */,
 				9FAD1A861FB0379300EE1147 /* GeneralCategory */,
 				9FAD1A881FB0379300EE1147 /* Extension */,
 			);
@@ -313,9 +265,8 @@
 		9F438B981FAC1C100080BD69 /* Constant */ = {
 			isa = PBXGroup;
 			children = (
-				9FAD1A851FB0345800EE1147 /* AppConstant.h */,
+				9FAD1A851FB0345800EE1147 /* CommonConstant.h */,
 				9F438B991FAC1C100080BD69 /* Log.h */,
-				9FAD1ACC1FB04F2800EE1147 /* DataConstant.h */,
 			);
 			path = Constant;
 			sourceTree = "<group>";
@@ -665,12 +616,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2C03C121FD9429200611BED /* NSString+Hash.m in Sources */,
-				9F44A5A41FFC7A01003CAD1A /* BaseTableViewController.m in Sources */,
 				9F44A5961FFC7454003CAD1A /* PhotoView.m in Sources */,
 				9F44A57A1FFC6E37003CAD1A /* UUIDManager.m in Sources */,
 				9F59C0CF1FB165D200CB2E28 /* NetworkRequest.m in Sources */,
-				9F44A5A61FFC7A01003CAD1A /* MainNavigationController.m in Sources */,
-				9F44A5A51FFC7A01003CAD1A /* BaseViewController.m in Sources */,
 				9F44A56F1FFC6DCF003CAD1A /* UIButton+ClickEffect.m in Sources */,
 				9F44A56E1FFC6DCF003CAD1A /* ButtonWithPointInside.m in Sources */,
 				9F44A5781FFC6E37003CAD1A /* KeyChain.m in Sources */,

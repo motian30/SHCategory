@@ -43,7 +43,7 @@ typedef void(^AlertClickIndexBlock)(NSInteger clickIndex);
 /**
  展示弹框
  */
-- (void)showLXAlertView;
+- (void)showAlertView;
 
 
 /**
