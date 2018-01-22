@@ -64,7 +64,7 @@
         }
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        if (self.hiddenEffect) {
+        if (!self.hiddenEffect) {
             [SVProgressHUD  dismiss];
         }
         
@@ -79,8 +79,8 @@
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         
         NSLog(@"Error: %@",error);
-        if (self.hiddenEffect) {
-            [SVProgressHUD  dismiss];
+        if (!self.hiddenEffect) {
+            [SVProgressHUD  showErrorWithStatus:error.localizedDescription];
         }
         if (failure) {
             failure(self, error);
@@ -99,7 +99,7 @@
         }
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        if (self.hiddenEffect) {
+        if (!self.hiddenEffect) {
             [SVProgressHUD  dismiss];
         }
  
@@ -114,8 +114,8 @@
         
         NSLog(@"Error: %@",error);
         
-        if (self.hiddenEffect) {
-            [SVProgressHUD  dismiss];
+        if (!self.hiddenEffect) {
+            [SVProgressHUD  showErrorWithStatus:error.localizedDescription];
         }
         if (failure){
             failure(self, error);
